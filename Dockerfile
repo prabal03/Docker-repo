@@ -1,7 +1,7 @@
 from centos:latest
 
-run yum install httpd -y 
+RUN  dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
 
-ENTRYPOINT ["/usr/sbin/httpd"]
+Run yum install htop -y
 
-cmd ["-D","FOREGROUND"]
+Entrypoint ["htop"]
